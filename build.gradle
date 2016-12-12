@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	runtime("org.springframework:spring-webmvc:4.2.3.RELEASE")
+	runtime("org.springframework:spring-tx:4.2.3.RELEASE")
+	runtime("org.springframework:spring-jdbc:4.2.3.RELEASE")
+	runtime("mysql:mysql-connector-java:5.1.30")
+	runtime("org.mybatis:mybatis:3.3.1")
+	runtime("org.mybatis:mybatis-spring:1.2.4")
+	runtime("org.slf4j:slf4j-api:1.7.13")
+	testRuntime("org.springframework:spring-test:4.2.3.RELEASE")
+	testRuntime("junit:junit:4.12")
+}
